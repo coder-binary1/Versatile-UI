@@ -42,7 +42,9 @@
 }
 .habits-container,
 .extra-mile-container,
-.team-container {
+.team-container,
+.calculator-container,
+.calculator {
   padding-top: 100px;
   display: flex;
   align-items: center;
@@ -237,6 +239,27 @@ main {
   width: 100%;
 }
 
+/* Calculator */
+.calculator-container {
+  flex-direction: column;
+}
+.calculator {
+  gap: 175px;
+}
+.chart-bmi > .col-title {
+  margin-bottom: 50px;
+}
+table {
+  border-collapse: collapse;
+}
+table tr > th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 13px 18px;
+}
+td {
+  color: rgba(255, 255, 255, 0.5);
+}
 /* Meet Our Team  */
 .team-container {
   flex-direction: column;
@@ -265,32 +288,32 @@ main {
   left: 10px;
 }
 .member-1 {
-  background-image: url(/images/trainer1.png);
+  background-image: url(../images/trainer1.png);
   background-position: center;
   background-size: cover;
 }
 .member-2 {
-  background-image: url(/images/trainer2.png);
+  background-image: url(../images/trainer2.png);
   background-position: center;
   background-size: cover;
 }
 .member-3 {
-  background-image: url(/images/trainer3.png);
+  background-image: url(../images/trainer3.png);
   background-position: center;
   background-size: cover;
 }
 .member-4 {
-  background-image: url(/images/trainer4.png);
+  background-image: url(../images/trainer4.png);
   background-position: center;
   background-size: cover;
 }
 .member-5 {
-  background-image: url(/images/trainer5.png);
+  background-image: url(../images/trainer5.png);
   background-position: center;
   background-size: cover;
 }
 .member-6 {
-  background-image: url(/images/trainer6.png);
+  background-image: url(../images/trainer6.png);
   background-position: center;
   background-size: cover;
 }
