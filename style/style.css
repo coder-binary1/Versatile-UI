@@ -1,0 +1,191 @@
+@import url("https://fonts.cdnfonts.com/css/miama");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* universal style */
+* {
+  margin: 0;
+  padding: 0;
+}
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+
+/* shared style */
+.hidden {
+  display: none;
+}
+.btn {
+  color: #ffffff;
+  font-size: 1.125rem;
+  border-radius: 42px;
+  height: 54px;
+  width: 224px;
+}
+.btn-primary {
+  background-color: #e6533c;
+  border: none;
+}
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgb(255, 255, 255);
+}
+header {
+  background: #272323;
+}
+/* header style */
+header > div {
+  padding: 0 13%;
+  background: linear-gradient(
+    360deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+
+/* navbar style */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 55px;
+}
+.nav-title {
+  color: #e6533c;
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+.nav-links {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 4px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 47px;
+}
+.nav-links > li:first-child {
+  padding: 8px 20px;
+  background-color: #e6533c;
+  border-radius: 46px;
+}
+.nav-links > li:last-child {
+  margin-right: 24px;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+
+/* header-content style */
+.hero {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 87px;
+}
+.header-content {
+  max-width: 520px;
+}
+.header-title {
+  font-size: 4.875rem;
+  font-weight: 900;
+  line-height: 120%;
+}
+#miama {
+  font-family: "Miama", sans-serif;
+  font-size: 9.875rem;
+  font-weight: 400;
+}
+.header-desc {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 28px 0;
+}
+.btn-containre {
+  display: flex;
+  gap: 20px;
+}
+.header-img img {
+  width: 120%;
+}
+.header-img {
+  position: relative;
+}
+.header-card-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header-card-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header-card-1,
+.header-card-2 {
+  padding: 17px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  /backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+.header-card-1 h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.header-card-2 h2 {
+  font-size: 1.5rem;
+  color: #fafaf9;
+}
+.header-card-1 p,
+.header-card-2 p {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+.card-circle {
+  background-color: #e6533c;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 576px) {
+  header > div {
+    padding: 0 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .menu-bar {
+    display: block;
+    color: #ffffff;
+  }
+  .hero {
+    flex-direction: column;
+  }
+
+  .header-title {
+    font-size: 2.25rem;
+    width: 274px;
+  }
+  #miama {
+    font-size: 4.25rem;
+  }
+  .header-desc {
+    width: 274px;
+  }
+  .btn {
+    width: 170px;
+  }
+}
