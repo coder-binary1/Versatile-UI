@@ -73,7 +73,6 @@ header > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 55px;
 }
 .nav-title {
   color: #e6533c;
@@ -248,6 +247,7 @@ main {
   margin: 14px auto 88px;
 }
 .calculator {
+  gap: 157px;
   justify-content: space-between;
   padding: 52px 13%;
 }
@@ -418,6 +418,9 @@ select {
     flex-direction: column;
   }
   /* header style */
+  .navbar {
+    padding-top: 20px;
+  }
   .nav-links {
     display: none;
   }
