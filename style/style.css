@@ -43,7 +43,8 @@
 .habits-container,
 .extra-mile-container,
 .team-container,
-.calculator {
+.calculator,
+.app-container {
   display: flex;
   align-items: center;
 }
@@ -290,6 +291,23 @@ select {
   background-color: #e6533c;
   border-radius: 42px;
 }
+
+/* app section */
+.app-container {
+  margin: 88px 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.app-container .section-desc {
+  margin: 20px 0;
+}
+.app-container img {
+  transform: scale(1.5);
+  transition: 1s ease-in-out;
+}
+.app-container img:hover {
+  transform: scale(2) rotate(5deg);
+}
 /* Meet Our Team  */
 .team-container {
   flex-direction: column;
@@ -395,7 +413,8 @@ select {
   .habits,
   .extra-mile-container,
   .calculator,
-  .footer {
+  .footer,
+  .app-container {
     flex-direction: column;
   }
   /* header style */
@@ -488,6 +507,17 @@ select {
 
   .your-bmi form input {
     width: calc(100% - 20px);
+  }
+  /* app section  */
+  .app-container .section-desc {
+    text-align: center;
+  }
+  .app-container {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+  .app-container img {
+    transform: none;
   }
   /* Meet Our Team  */
   .team-container {
