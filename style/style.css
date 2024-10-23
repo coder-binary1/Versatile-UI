@@ -43,21 +43,21 @@
 .habits-container,
 .extra-mile-container,
 .team-container,
-.calculator-container,
 .calculator {
-  padding-top: 100px;
   display: flex;
   align-items: center;
 }
 /* header style */
 header,
-footer {
+footer,
+.calculator {
   background: #222222;
 }
 header > div,
-main,
+.habits-container,
+.team-container,
 footer {
-  padding: 0 13%;
+  padding: 100px 13% 0;
 }
 header > div {
   background: linear-gradient(
@@ -221,7 +221,7 @@ main {
 }
 /* Run an Extra  Mile Easily */
 .extra-mile-container {
-  margin-top: 100px;
+  margin: 100px 13% 0;
   background-color: #222222;
   padding: 30px;
   border-radius: 18px;
@@ -241,10 +241,14 @@ main {
 
 /* Calculator */
 .calculator-container {
-  flex-direction: column;
+  margin-top: 100px;
+}
+.calculator-container .section-desc {
+  margin: 14px auto 88px;
 }
 .calculator {
-  gap: 175px;
+  justify-content: space-between;
+  padding: 52px 13%;
 }
 .chart-bmi > .col-title {
   margin-bottom: 50px;
@@ -259,6 +263,32 @@ td {
 }
 td {
   color: rgba(255, 255, 255, 0.5);
+}
+.your-bmi .col-desc {
+  margin: 14px 0 34px;
+}
+.your-bmi form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.your-bmi form input,
+select {
+  padding: 0.813rem 0.625rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fafaf9;
+}
+.your-bmi form select > option {
+  background-color: #222222;
+}
+.your-bmi form select:nth-last-child(2) {
+  grid-column: span 2;
+}
+.your-bmi form input:last-child {
+  background-color: #e6533c;
+  border-radius: 42px;
 }
 /* Meet Our Team  */
 .team-container {
@@ -356,9 +386,17 @@ td {
 }
 @media screen and (max-width: 576px) {
   header > div,
-  main,
+  .habits-container,
+  .team-container,
   footer {
     padding: 0 20px;
+  }
+  .hero,
+  .habits,
+  .extra-mile-container,
+  .calculator,
+  .footer {
+    flex-direction: column;
   }
   /* header style */
   .nav-links {
@@ -368,10 +406,6 @@ td {
     display: block;
     color: #ffffff;
   }
-  .hero {
-    flex-direction: column;
-  }
-
   .header-title {
     font-size: 2.25rem;
     width: 274px;
@@ -395,14 +429,12 @@ td {
   }
   /* main related style */
   /* Change Your Habits */
-  .habits-container {
+  .habits-container,
+  .team-container {
     padding-top: 20px;
   }
   .section-title {
     font-size: 2rem;
-  }
-  .habits {
-    flex-direction: column;
   }
   .habit {
     width: 230px;
@@ -422,7 +454,6 @@ td {
   .extra-mile-container {
     margin-top: 66px;
     gap: 30px;
-    flex-direction: column;
   }
   .extra-mile > .section-desc {
     margin-bottom: 24px;
@@ -433,7 +464,35 @@ td {
   .extra-mile-img {
     width: 287px;
   }
+
+  /* Calculator */
+  .calculator-container {
+    margin-top: 30px;
+  }
+  .calculator-container .section-title,
+  .section-desc {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .calculator-container .section-desc {
+    margin: 14px auto 32px;
+  }
+  .calculator {
+    padding: 34px 20px;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .calculator .col-title {
+    font-size: 1rem;
+  }
+
+  .your-bmi form input {
+    width: calc(100% - 20px);
+  }
   /* Meet Our Team  */
+  .team-container {
+    padding-bottom: 20px;
+  }
   .our-team > .section-desc {
     margin-bottom: 37px;
   }
@@ -443,7 +502,6 @@ td {
 
   /* footer style */
   .footer {
-    flex-direction: column;
     gap: 30px;
   }
 }
